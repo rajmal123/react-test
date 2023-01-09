@@ -1,0 +1,29 @@
+.cardbox {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    text-align: left ;
+    gap: 4px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.cardbox:hover img{
+    filter: brightness(20%);
+    cursor: pointer;
+}
+
+.innertext{
+    display: none;
+    position: absolute;
+    color: white !important;
+    top: 40%;
+    left: 35%;
+}
+
+.cardbox:hover .innertext{
+display: block;
+color: white !important;
+z-index: 1;
+}
